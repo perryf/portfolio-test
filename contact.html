@@ -6,46 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Perry Portfolio</title>
 </head>
 
 <body>
-  <div>
+  <header>
     <img src="http://via.placeholder.com/200x70" alt="logo">
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-    </ul>
+    <nav>
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Contact</h1>
     <div>
-      <h1>Contact</h1>
-      <div>
-        CareerFoundry GmbH
-        <br>
-        Köpenicker Str. 126
-        <br>
-        10179 Berlin
-        <br>
-        Deutschland
-        <br>
-      </div>
+      CareerFoundry GmbH
+      <br>
+      Köpenicker Str. 126
+      <br>
+      10179 Berlin
+      <br>
+      Deutschland
+      <br>
+    </div>
+  </main>
 
-      <div>
-        <br>
-        Tel <a href="tel:+491234567">+49 1234567</a>
-        <br>
-        Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a>
-        <br>
-        <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a>
-      </div>
+  <div>
+    <br>
+    Tel <a href="tel:+491234567">+49 1234567</a>
+    <br>
+    Skype <a href="skype:hello.careerfoundry">hello.careerfoundry</a>
+    <br>
+    <a href="mailto:office@careerfoundry.com">Contact me!</a>
+  </div>
 
+  <form action="" method="post" id="contact-form">
+    <label class="standard-label" for="contact-email">Email: </label>
+    <input type="email" id="contact-email" required>
+
+    <label class="standard-label" for="contact-phone">Telephone: </label>
+    <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+    <label class="standard-label" for="contact-message">Message: </label>
+    <textarea required id="contact-message" maxlength="240"></textarea>
+
+    <button type="submit">Send message</button>
+  </form>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
