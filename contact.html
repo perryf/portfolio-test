@@ -16,7 +16,7 @@
 
 <body>
   <header class="page-header">
-    <img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item">
+    <img src="img/dragonite.png" alt="logo" class="page-header__item page-header__image">
     <nav class="page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -47,29 +47,38 @@
       Deutschland
       <br>
     </div>
+
+    <div>
+      <br>
+      Tel <a href="tel:+491234567">+49 1234567</a>
+      <br>
+      Skype <a href="skype:hello.careerfoundry">hello.careerfoundry</a>
+      <br>
+      <a href="mailto:office@careerfoundry.com">Contact me!</a>
+    </div>
+
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">Email: </label>
+      <input type="email" id="contact-email" required>
+
+      <label class="standard-label" for="contact-phone">Telephone: </label>
+      <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+      <label class="standard-label" for="contact-message">Message: </label>
+      <textarea required id="contact-message" maxlength="240"></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
   </main>
 
-  <div>
-    <br>
-    Tel <a href="tel:+491234567">+49 1234567</a>
-    <br>
-    Skype <a href="skype:hello.careerfoundry">hello.careerfoundry</a>
-    <br>
-    <a href="mailto:office@careerfoundry.com">Contact me!</a>
-  </div>
-
-  <form action="" method="post" id="contact-form">
-    <label class="standard-label" for="contact-email">Email: </label>
-    <input type="email" id="contact-email" required>
-
-    <label class="standard-label" for="contact-phone">Telephone: </label>
-    <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-    <label class="standard-label" for="contact-message">Message: </label>
-    <textarea required id="contact-message" maxlength="240"></textarea>
-
-    <button type="submit">Send message</button>
-  </form>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <img src="img/github_icon.svg" alt="Github">
+      <img src="img/twitter_icon.svg" alt="Twitter">
+      <img src="img/linkedin_icon.svg" alt="LinkedIn">
+    </div>
+  </footer>
 
   <script src="js/tota11y.min.js"></script>
 </body>
