@@ -11,9 +11,20 @@
   Text Color (Dark Gray): #2b2b2b;
   Primary Color (Purple): #357b70;
   Secondary Color (Orange): #e0b354;
-
-	#483d8b
+	Image Background Color (Dark Purple): #483d8b
 */
+
+:root {
+	--primary-color: #357b70;
+	--secondary-color: #e0b354;
+	--gray: #bbb;
+	--dark-gray: #2b2b2b;
+	--black: #000;
+
+	--image-background-color: #483d8b;
+	--visited-link: #05676e;
+	--active-link: #05676e;
+}
 
 * {
 	-webkit-box-sizing: border-box;
@@ -45,11 +56,11 @@ h3 {
 }
 
 a {
-	color: #357b70;
+	color: var(--primary-color);
 }
 
 a:visited {
-	color: #05676e;
+	color: var(--visited-link);
 }
 
 a:hover,
@@ -58,14 +69,14 @@ a:focus {
 }
 
 a:active {
-	color: #489c79;
+	color: var(--active-link);
 }
 
 button,
 .button {
 	border: none;
 	font-family: inherit;
-	background-color: #357b70;
+	background-color: var(--primary-color);
 	color: white;
 	text-decoration: none;
 	padding: 10px;
@@ -85,8 +96,8 @@ button:focus,
 }
 
 .button__secondary {
-	background-color: #e0b354;
-	color: #2b2b2b;
+	background-color: var(--secondary-color);
+	color: var(--dark-gray);
 }
 
 .button-link:visited {
@@ -99,13 +110,14 @@ button:focus,
 	display: flex;
 	width: 100%;
 	padding: 20px;
-	background-color: #bbb;
+	background-color: var(--gray);
 }
 
 .page-header__image {
-	background-color: #483d8b88;
+	background-color: var(--image-background-color);
+	opacity: 50%;
 	width: 60px;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 	border-radius: 25%;
 }
 
@@ -137,7 +149,7 @@ button:focus,
 }
 
 .profile__portrait {
-	background-color: #483d8b;
+	background-color: var(--image-background-color);
 	float: left;
 	min-width: 150px;
 	max-width: 300px;
